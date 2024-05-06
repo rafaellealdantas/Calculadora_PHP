@@ -1,6 +1,6 @@
 #site
 {
-    background-color: rgb(0, 0, 95);  
+    background-color: rgb(48, 48, 48);  
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -32,16 +32,16 @@
     border: none;
     background-color: white;    
     padding: 8.4px 200px;
-    margin-top: -10px; 
+    margin-top: -14px; 
     border-radius: 0px 5px 5px 0px;       
 }
 #operacao
 {
     display: inline-block;
     position: absolute;
-    top: 73px;
-    padding: 7px 10px;
-    left: 775px; 
+    top: 68px;
+    padding: 7px 55px;
+    left: 728px; 
     border-radius: 5px;     
 }
 .balao2
@@ -66,7 +66,24 @@
     border: none;
     background-color: white;    
     padding: 8.4px 200px;
-    margin-top: -10px; 
+    margin-top: -14px; 
     border-radius: 0px 5px 5px 0px;       
 }
-
+#calcular
+{
+    margin-top: 25px;
+    margin-left: -8px;
+    padding: 7px 10px;
+    color: rgb(0, 180, 0);
+    border: 1px solid rgb(0, 180, 0);
+    border-radius: 5px;
+    background-color: rgb(48, 48, 48);  
+}
+.resultado
+{  
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 0px 10px;
+    font-size: 30px;
+    margin-top: 5px;
+}
