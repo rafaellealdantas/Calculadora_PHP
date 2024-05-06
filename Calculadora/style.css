@@ -1,0 +1,61 @@
+#site
+{
+    background-color: rgb(0, 0, 95);  
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.cabeçalho
+{  
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;   
+    margin-top: -25px;  
+}
+.balao1
+{
+    display: inline-block;     
+}
+.balao1::after 
+{
+    content: "Número 1";      
+    padding: 7px 30px;
+    background-color: rgb(235, 235, 235); 
+    border-radius: 5px 0px 0px 5px;
+    position: absolute;
+    top: 9.4%;    
+}
+#num1
+{
+    display: inline-block;
+    position: absolute;
+    left: 152px;
+    border: none;
+    background-color: white;    
+    padding: 8.4px 200px;
+    margin-top: -10px; 
+    border-radius: 0px 5px 5px 0px;       
+}
+#operacao
+{
+    display: inline-block;
+    position: absolute;
+    top: 73px;
+    padding: 7px 10px;
+    left: 760px; 
+    border-radius: 5px;     
+}
+.balao2
+{
+    display: inline-block;     
+}
+.balao2::after 
+{
+    content: "Número 2";      
+    padding: 7px 30px;
+    background-color: rgb(235, 235, 235); 
+    border-radius: 5px 0px 0px 5px;
+    position: absolute;
+    top: 9.4%;
+    left: 850px;    
+}
+
