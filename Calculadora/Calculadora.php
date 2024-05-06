@@ -25,6 +25,7 @@
         <div class="balao2"></div>
         <input type="text" name="num2" id="num2">  
         
+        <button id="calcular">calcular</button>
     </form>
 </div>
 </body>
