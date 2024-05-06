@@ -29,9 +29,6 @@
         
         <button id="calcular">Calcular</button>
     </form>
-
-</body>
-</html>
 <?php
 $num1 = $_GET['num1'];
 $num2 = $_GET['num2'];
@@ -48,8 +45,15 @@ switch ($operacao)
         echo $num1 . " - " . $num2 . " = " . $sub;
         break;
     case '/':
+        if($num2 == 0)
+        {
+            echo "divisão por zero é inválida";
+        }
+        else
+        {       
         $div = $num1 / $num2;
         echo $num1 . " / " . $num2 . " = " .  $div;
+        }
         break;
     case '*':
         $mult = $num1 * $num2;
@@ -63,5 +67,13 @@ switch ($operacao)
 }
 echo '</div>';
 ?>
-
+<button id="salvar">Salvar</button>
+<button id="pegar">Pegar Valores</button>
+<button id="M">M</button>
+<button id="apagar">Apagar Histórico</button>
+<div class="historico">
+    <h1>Histórico</h1>
 </div>
+</div>
+</body>
+</html>
