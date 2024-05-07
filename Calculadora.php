@@ -5,7 +5,7 @@ $num1 = $_GET['num1'] ?? null;
 $num2 = $_GET['num2'] ?? null;
 $operacao = $_GET['operacao'] ?? null;
 
-if ($num1 !== null && $num2 !== null && $operacao !== null && !isset($_SESSION['resultado'])) {
+if ($num1 !== null && $num2 !== null && $operacao !== null) {
     switch ($operacao) {
         case '+':
             $resultado = $num1 + $num2;
@@ -36,12 +36,8 @@ if ($num1 !== null && $num2 !== null && $operacao !== null && !isset($_SESSION['
 
     // Adiciona o cálculo ao histórico
     $_SESSION['historico'][] = "$num1 $operacao $num2 = $resultado";
-    $_SESSION['resultado'] = $resultado;
-} elseif (!isset($_SESSION['resultado'])) {
-    unset($_SESSION['historico']);
-    $resultado = null;
 } else {
-    $resultado = $_SESSION['resultado'];
+    $resultado = null;
 }
 
 function fatorial($numero) {
@@ -55,7 +51,6 @@ function fatorial($numero) {
 // Apagar histórico
 if (isset($_GET['apagar'])) {
     unset($_SESSION['historico']);
-    unset($_SESSION['resultado']);
 }
 
 ?>
@@ -80,7 +75,7 @@ if (isset($_GET['apagar'])) {
         <select name="operacao" id="operacao">
             <option value="+">+</option>
             <option value="-">-</option>
-            <option value=""></option>
+            <option value="*">*</option>
             <option value="/">/</option>
             <option value="^">^</option>
             <option value="n!">n!</option>
@@ -100,10 +95,6 @@ if (isset($_GET['apagar'])) {
     </div>
     <form action="" method="get">
         <button type="submit" name="apagar" id="apagar">Apagar Histórico</button>
-        <!-- Botões movidos para o lado do botão "Apagar Histórico" -->
-        <button id="salvar">Salvar</button>
-        <button id="pegar">Pegar Valores</button>
-        <button id="M">M</button>
     </form>
     <div class="historico">
         <h1>Histórico</h1>

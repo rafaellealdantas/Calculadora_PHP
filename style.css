@@ -24,7 +24,7 @@
     background-color: rgb(235, 235, 235); 
     border-radius: 5px 0px 0px 5px;
     position: absolute;
-    top: 10.7%;  
+    top: 9.4%;    
 }
 #num1
 {
@@ -33,7 +33,7 @@
     left: 152px;
     border: none;
     background-color: white;    
-    padding: 8.4px 130px;
+    padding: 8.4px 200px;
     margin-top: -14px; 
     border-radius: 0px 5px 5px 0px;       
 }
@@ -43,7 +43,7 @@
     position: absolute;
     top: 68px;
     padding: 7px 55px;
-    left: 615px; 
+    left: 728px; 
     border-radius: 5px;     
 }
 .balao2
@@ -57,17 +57,17 @@
     background-color: rgb(235, 235, 235); 
     border-radius: 5px 0px 0px 5px;
     position: absolute;
-    top: 10.7%;
-    left: 787px; 
+    top: 9.4%;
+    left: 880px; 
 }
 #num2
 {
     display: inline-block;
     position: absolute;
-    left: 910px;
+    left: 1003px;
     border: none;
     background-color: white;    
-    padding: 8.4px 130px;
+    padding: 8.4px 200px;
     margin-top: -14px; 
     border-radius: 0px 5px 5px 0px;       
 }
